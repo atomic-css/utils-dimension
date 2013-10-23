@@ -1,0 +1,19 @@
+{
+  "name": "atomic-css-utils-dimension",
+  "version": "1.0.0",
+  "homepage": "https://github.com/atomic-css/utils-dimension",
+  "authors": [
+    "Lukáš Mladý",
+    "Nicolas Gallagher"
+  ],
+  "description": "Utilities for dimension-related CSS",
+  "main": [
+    "dimension.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json"
+  ]
+}

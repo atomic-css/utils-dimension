@@ -1,0 +1,11 @@
+{
+  "name": "utils-dimension",
+  "repo": "atomic-css/utils-dimension",
+  "description": "Utilities for dimension-related CSS",
+  "version": "1.0.0",
+  "styles": [
+    "dimension.css"
+  ],
+  "author": "Lukáš Mladý",
+  "license": "MIT"
+}
