@@ -6,61 +6,11 @@
    ========================================================================== */
 
 /**
- * Make an element shrink wrap its content.
- */
-
-.u-sizeFit,
-.u-sizeFitAlt {
-  display: block !important;
-  float: left !important;
-  width: auto !important;
-}
-
-.u-sizeFitAlt {
-  float: right !important;
-}
-
-/**
- * Make an element fill the remaining space.
- * N.B. This will hide overflow.
- */
-
-.u-sizeFill {
-  display: block !important;
-  overflow: hidden !important;
-  width: auto !important;
-}
-
-/**
- * An alternative method to make an element fill the remaining space.
- * N.B. Do not use if child elements might be wider than the remaining space.
- * In Chrome, Safari, and Firefox it results in undesired layout.
- */
-
-.u-sizeFillAlt {
-  display: table-cell !important;
-  max-width: 100% !important;
-  width: 10000px !important;
-}
-
-/**
- * Make an element its natural width.
+ * Make an element fit its content.
  */
 
 .u-sizeAuto {
   width: auto !important;
-}
-
-/**
- * Make an element the width of its parent.
- */
-
-.u-sizeFull {
-  -webkit-box-sizing: border-box !important;
-  -moz-box-sizing: border-box !important;
-  box-sizing: border-box !important;
-  display: block !important;
-  width: 100% !important;
 }
 
 /* Proportional widths
@@ -85,7 +35,8 @@
  */
 
 .u-size1of12 {
-  width: 8.333% !important;
+  width: -webkit-calc(100% / 12) !important;
+  width: calc(100% / 12) !important;
 }
 
 .u-size1of10 {
@@ -98,7 +49,8 @@
 
 .u-size1of6,
 .u-size2of12 {
-  width: 16.667% !important;
+  width: -webkit-calc(100% / 6) !important;
+  width: calc(100% / 6) !important;
 }
 
 .u-size1of5,
@@ -119,7 +71,8 @@
 .u-size1of3,
 .u-size2of6,
 .u-size4of12 {
-  width: 33.333% !important;
+  width: -webkit-calc(100% / 3) !important;
+  width: calc(100% / 3) !important;
 }
 
 .u-size3of8 {
@@ -132,7 +85,8 @@
 }
 
 .u-size5of12 {
-  width: 41.667% !important;
+  width: -webkit-calc(500% / 12) !important;
+  width: calc(500% / 12) !important;
 }
 
 .u-size1of2,
@@ -145,7 +99,8 @@
 }
 
 .u-size7of12 {
-  width: 58.333% !important;
+  width: -webkit-calc(700% / 12) !important;
+  width: calc(700% / 12) !important;
 }
 
 .u-size3of5,
@@ -160,7 +115,8 @@
 .u-size2of3,
 .u-size4of6,
 .u-size8of12 {
-  width: 66.667% !important;
+  width: -webkit-calc(200% / 3) !important;
+  width: calc(200% / 3) !important;
 }
 
 .u-size7of10 {
@@ -180,7 +136,8 @@
 
 .u-size5of6,
 .u-size10of12 {
-  width: 83.333% !important;
+  width: -webkit-calc(1000% / 12) !important;
+  width: calc(1000% / 12) !important;
 }
 
 .u-size7of8 {
@@ -192,5 +149,37 @@
 }
 
 .u-size11of12 {
-  width: 91.667% !important;
+  width: -webkit-calc(1100% / 12) !important;
+  width: calc(1100% / 12) !important;
+}
+
+.u-size1of1 {
+  width: 100% !important;
+}
+
+/* Flexible size
+   ========================================================================== */
+
+/**
+ * Grow by a factor of 1, regardless of intrinsic width.
+ */
+
+.u-flexOne {
+  flex: 1;
+}
+
+/**
+ * Grow and shrink by a factor of 1, regardless of intrinsic width.
+ */
+
+.u-flexAuto {
+  flex: auto;
+}
+
+/**
+ * Disable flexible size.
+ */
+
+.u-flexNone {
+  flex: none;
 }

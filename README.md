@@ -18,13 +18,12 @@ Read more about [Atomic framework](https://github.com/atomic-css/atomic).
 
 ## Available classes
 
-* `u-sizeFit` - make an element shrink wrap its content
-* `u-sizeFitAlt` - alternative to `u-sizeFit`
-* `u-sizeFill` - make an element fill the remaining space
-* `u-sizeFillAlt` - alternative to `u-sizeFill`
 * `u-sizeAuto` - make an element its calculated width
-* `u-sizeFull` - make an element the width of its parent
+* `u-size1of1` - 100% width
 * `u-sizeXofY` (numerous) - specify the proportional width of an object
+* `u-flexOne` - grow by a factor of 1, regardless of intrinsic width
+* `u-flexAuto` - grow and shrink by a factor of 1, regardless of intrinsic width
+* `u-flexNone` - disable flexible size
 
 `X` must be an integer less than `Y`.
 
@@ -36,4 +35,4 @@ Read more about [Atomic framework](https://github.com/atomic-css/atomic).
 * Opera (latest)
 * Firefox 4+
 * Safari 5+
-* Internet Explorer 8+
+* Internet Explorer 8+ (10+ for flex sizes)
