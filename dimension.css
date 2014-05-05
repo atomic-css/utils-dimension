@@ -165,7 +165,7 @@
  */
 
 .u-flexOne {
-  flex: 1;
+  flex: 1 !important;
 }
 
 /**
@@ -173,7 +173,7 @@
  */
 
 .u-flexAuto {
-  flex: auto;
+  flex: auto !important;
 }
 
 /**
@@ -181,5 +181,5 @@
  */
 
 .u-flexNone {
-  flex: none;
+  flex: none !important;
 }
