@@ -165,6 +165,9 @@
  */
 
 .u-flexOne {
+  -webkit-box-flex: 1 !important;
+  -webkit-flex: 1 !important;
+  -ms-flex: 1 !important;
   flex: 1 !important;
 }
 
@@ -173,6 +176,9 @@
  */
 
 .u-flexAuto {
+  -webkit-box-flex: 1 !important;
+  -webkit-flex: auto !important;
+  -ms-flex: auto !important;
   flex: auto !important;
 }
 
@@ -181,5 +187,8 @@
  */
 
 .u-flexNone {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
   flex: none !important;
 }
